@@ -33,7 +33,8 @@ $ sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda-11.0/lib64/lib
 #아나콘다 프롬프트 실행을 위해 아나콘다 설치
 https://www.anaconda.com/products/individual
 ```bash
-$ conda create -n gpu3090 python=3.7
+#gpu3090의 이름으로 python3.7 버전의 가상환경 생성
+$ conda create -n gpu3090 python=3.7 
 #gpu3090의 가상환경으로 이동
 $ conda activate gpu3090
 ```
