@@ -41,8 +41,7 @@ $ conda activate gpu3090
 ### STEP 03 Torch and python requirement install
 ``` python
 #CUDA버전과 맞는 PyTorch 설치
-pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 -f 
-pip install -r requirements.txt
+pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
 ```
 
 # yolov5baseFacilitydetection
