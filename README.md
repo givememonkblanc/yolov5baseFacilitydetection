@@ -23,23 +23,23 @@ https://developer.nvidia.com/rdp/cudnn-download 에서 8.0 설치
 
 ```bash
 $ tar -xzvf cudnn-11.0-linux-x64-v8.0.2.39.tgz
-$ sudo cp cuda/include/cudnn*.h /usr/local/cuda-11.0/include
-$ sudo cp cuda/lib64/libcudnn* /usr/local/cuda-11.0/lib64
-$ sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda-11.0/lib64/libcudnn*
+$ sudo cp cuda/include/cudnn*.h /usr/local/cuda/include
+$ sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64
+$ sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda/lib64/libcudnn*
 ```
 
 ### STEP 02 anaconda install
-#가상환경 설정을 위해 아나콘다 설치 
+#아나콘다 프롬프트 실행을 위해 아나콘다 설치
 https://www.anaconda.com/products/individual
 ```bash
-$ conda create -n gpu3090 python=3.? 
+$ conda create -n gpu3090 python=3.7
 #gpu3090의 가상환경으로 이동
 $ conda activate gpu3090
 ```
 
 ### STEP 03 Torch and python requirement install
 ``` python
-#추가 토치환경 설치
+#CUDA버전과 맞는 PyTorch 설치
 pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 -f 
 pip install -r requirements.txt
 ```
