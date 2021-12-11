@@ -80,3 +80,9 @@ $ python .py
 ```bash
 #평가점수 산출을 위한 코드
 $ python test.py --weights runs/exp()/weights/best.pt --data data/test.yaml --img 604 --batch 8
+```
+
+# 성능평가 위해 사용한 테스트셋 inference
+```bash
+$ python test.py --weights runs/exp()/weights/best.pt --data data/test.yaml --img 604 --batch 8
+```
