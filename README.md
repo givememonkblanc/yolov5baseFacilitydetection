@@ -31,6 +31,7 @@ $ sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda-11.0/lib64/lib
 
 ### STEP 02 anaconda install
 #아나콘다 프롬프트 실행을 위해 아나콘다 설치
+
 #실행 환경에 아나콘다 프롬프트가 있을 경우 생략
 https://www.anaconda.com/products/individual
 ```bash
