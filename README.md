@@ -71,7 +71,7 @@ $ python train.py --img 608 --batch 8 --epochs 50 --data data/coco128.yaml --cfg
 # 모델 inference
 ```bash
 #inference 결과값 출력을 위한 코드(conf가 0.3 이상인 것만 출력)
-$ python detect.py --source ./test_input/ --weights runs/exp()/weights/best.pt --conf 0.3 --save-txt
+$ python detect.py --source ./test_input/ --weights runs/exp()/weights/best.pt --conf 0.3 --save-txt --nosave
 ```
 ```bash
 #결과값을 test_output에 저장하기 위한 코드
