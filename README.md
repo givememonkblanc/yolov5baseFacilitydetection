@@ -52,7 +52,7 @@ $ conda activate gpu3090
 
 
 ### STEP 04 가상환경에 Torch and python requirement install
-```
+```bash
 #CUDA버전과 맞는 PyTorch 설치
 $ pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
 #필요한 기타 패키지 설치
@@ -61,7 +61,7 @@ $ pip install -r requirements.txt
 
 
 # yolov5 모델을 사용해 학습
-```
+```bash
 #학습코드
 $ python train.py --img 608 --batch 8 --epochs 50 --data data/coco128.yaml --cfg models/yolov5m.yaml --weights weights/yolov5m.pt
 
@@ -69,11 +69,11 @@ $ python train.py --img 608 --batch 8 --epochs 50 --data data/coco128.yaml --cfg
 
 
 # 모델 inference
-```
+```bash
 #inference 결과값 출력을 위한 코드(conf가 0.3 이상인 것만 출력)
 $ python detect.py --source ./test_input/ --weights runs/exp()/weights/best.pt --conf 0.3
 ```
-```
+```bash
 #결과값을 test_output에 저장하기 위한 코드
 $ python .py
 ```
