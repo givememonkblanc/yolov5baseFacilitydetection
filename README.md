@@ -82,6 +82,7 @@ $ python .py
 ```
 ```bash
 #평가점수 산출을 위한 코드
+#본 모델은 yolo모델이며, yolo의 주석파일은 txt로 변환되어있기 때문에 평가용 inference의 정답지가 json인 경우 아래 코드는 실행이 불가할 수 있음
 $ python test.py --weights runs/exp()/weights/best.pt --data data/test.yaml --img 604 --batch 8
 ```
 
