@@ -88,5 +88,5 @@ $ python test.py --weights runs/exp()/weights/best.pt --data data/test.yaml --im
 #평가점수 산출을 위한 코드
 $ python test.py --weights runs/exp()/weights/best.pt --data data/test.yaml --img 604 --batch 8
 
-#ourourtest_summary폴더에 oursummary.txt로 저장되어있음
+#위 코드를 실행한 결과가 이미 ourourtest_summary폴더에 oursummary.txt로 저장되어있음
 ```
