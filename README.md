@@ -9,8 +9,8 @@
 CUDA 11.0
 ```bash
  #cuda 설치
-# wget https://developer.download.nvidia.com/compute/cuda/11.0.3/local_installers/cuda_11.0.3_450.51.06_linux.run
-# sudo sh cuda_11.0.3_450.51.06_linux.run
+$ wget https://developer.download.nvidia.com/compute/cuda/11.0.3/local_installers/cuda_11.0.3_450.51.06_linux.run
+$ sudo sh cuda_11.0.3_450.51.06_linux.run
 ```
 ```
 #cuda 환경변수 설정
