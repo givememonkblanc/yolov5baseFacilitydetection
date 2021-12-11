@@ -59,6 +59,10 @@ $ pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 -f h
 $ pip install -r requirements.txt
 ```
 
+### STEP 05 Drive 환경설정
+http:// 구글 드라이브 주소 에서 다운로드 
+해당 알집 파일을 위치에 맞춰 풀어주세요
+
 
 # yolov5 모델을 사용해 학습
 ```bash
