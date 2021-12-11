@@ -67,9 +67,9 @@ $ pip install -r requirements.txt
  ㅣ---------test_input    
  ㅣ---------test_output    
  ㅣ--------yolov5 폴더 안에 있는 모든 파일    
-                    .    
-                    .    
-                    .    
+　　　　　　　　　　　.    
+　　　　　　　　　　　.    
+　　　　　　　　　　　.    
 
 
 # yolov5 모델을 사용해 학습
