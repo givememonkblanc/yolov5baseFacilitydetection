@@ -3,20 +3,21 @@
 - 따라서 CUDA 10.1버전에서 진행되었지만, 심사용 컴퓨터 실행 환경에 맞춰 CUDA 11.0버전에 맞춰 아래 코드를 세팅함. 
 
 #그래픽 드라이버는 450.36.06버전 이상이여야함. 
+
 ### STEP 01 CUDA 11.0, cuDNN 8.0.5 install
 - 터미널 실행
 
 CUDA 11.0
 ```bash
- #cuda 설치
+#cuda 설치
 $ wget https://developer.download.nvidia.com/compute/cuda/11.0.3/local_installers/cuda_11.0.3_450.51.06_linux.run
 $ sudo sh cuda_11.0.3_450.51.06_linux.run
 ```
-```
+```bash
 #cuda 환경변수 설정
-# vim ~/.bashrc
-# export PATH=/usr/local/cuda-11.0/bin:$PATH
-# export LD_LIBRARY_PATH=/usr/local/cuda-11.0/lib64:$LD_LIBRARY_PATH
+$ vim ~/.bashrc
+$ export PATH=/usr/local/cuda-11.0/bin:$PATH
+$ export LD_LIBRARY_PATH=/usr/local/cuda-11.0/lib64:$LD_LIBRARY_PATH
 ```
 
 cuDNN 8.0 5   
@@ -34,10 +35,12 @@ $ sudo cp cuda/lib64/libcudnn* /usr/local/cuda-11.0/lib64
 $ sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda-11.0/lib64/libcudnn*
 ```
 
+
 ### STEP 02 anaconda install
 #아나콘다 프롬프트 실행을 위해 아나콘다 설치
  #실행 환경에 아나콘다 프롬프트가 있을 경우 생략
 https://www.anaconda.com/products/individual
+
 
 ### STEP 03 anaconda 가상환경 생성
 ```bash
@@ -47,6 +50,7 @@ $ conda create -n gpu3090 python=3.7
 $ conda activate gpu3090
 ```
 
+
 ### STEP 04 가상환경에 Torch and python requirement install
 ```
 #CUDA버전과 맞는 PyTorch 설치
@@ -55,9 +59,21 @@ $ pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 -f h
 $ pip install -r requirements.txt
 ```
 
-# yolov5baseFacilitydetection
+
+# yolov5 모델을 사용해 학습
 ```
 #학습코드
 $ python train.py --img 608 --batch 8 --epochs 50 --data data/coco128.yaml --cfg models/yolov5m.yaml --weights weights/yolov5m.pt
 
+```
+
+
+# 모델 inference
+```
+#inference 결과값 출력을 위한 코드(conf가 0.3 이상인 것만 출력)
+$ python detect.py --source ./test_input/ --weights runs/exp()/weights/best.pt --conf 0.3
+```
+```
+#결과값을 test_output에 저장하기 위한 코드
+$ python .py
 ```
