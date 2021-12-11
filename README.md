@@ -45,7 +45,7 @@ https://www.anaconda.com/products/individual
 ### STEP 03 anaconda 가상환경 생성
 ```bash
 #gpu3090의 이름으로 python3.8 버전의 가상환경 생성
-$ conda create -n gpu3090 python=3.8 
+$ conda create -n gpu3090 python=3.8
 #gpu3090의 가상환경으로 이동
 $ conda activate gpu3090
 ```
@@ -60,8 +60,7 @@ $ pip install -r requirements.txt
 ```
 
 ### STEP 05 Drive 환경설정
-http:// 구글 드라이브 주소 에서 다운로드 
-해당 알집 파일을 위치에 맞춰 풀어주세요
+- http:// 구글 드라이브 주소 에서 yolov5 알집 파일을 현재 디렉토리에 '현재 폴더로 풀기'로 풀어주세요
 
 
 # yolov5 모델을 사용해 학습
