@@ -77,3 +77,6 @@ $ python detect.py --source ./test_input/ --weights runs/exp()/weights/best.pt -
 #결과값을 test_output에 저장하기 위한 코드
 $ python .py
 ```
+```bash
+#평가점수 산출을 위한 코드
+$ python test.py --weights runs/exp()/weights/best.pt --data data/test.yaml --img 604 --batch 8
