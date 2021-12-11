@@ -44,8 +44,8 @@ https://www.anaconda.com/products/individual
 
 ### STEP 03 anaconda 가상환경 생성
 ```bash
-#gpu3090의 이름으로 python3.7 버전의 가상환경 생성
-$ conda create -n gpu3090 python=3.7 
+#gpu3090의 이름으로 python3.8 버전의 가상환경 생성
+$ conda create -n gpu3090 python=3.8 
 #gpu3090의 가상환경으로 이동
 $ conda activate gpu3090
 ```
