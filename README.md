@@ -59,7 +59,7 @@ $ pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 -f h
 $ pip install -r requirements.txt
 ```
 
-### STEP 05 Drive 환경설정
+### STEP 05 평가용 코드/데이터 파일 다운로드
 - http:// 구글 드라이브 주소 에서 yolov5 알집 파일을 현재 디렉토리에 '현재 폴더로 풀기'로 풀어주세요
 
 
