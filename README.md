@@ -37,8 +37,8 @@ $ sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda-11.0/lib64/lib
 
 
 ### STEP 02 anaconda install
-#아나콘다 프롬프트 실행을 위해 아나콘다 설치
- #실행 환경에 아나콘다 프롬프트가 있을 경우 생략
+#아나콘다 프롬프트 실행을 위해 아나콘다 설치    
+#실행 환경에 아나콘다 프롬프트가 있을 경우 생략
 https://www.anaconda.com/products/individual
 
 
@@ -61,6 +61,15 @@ $ pip install -r requirements.txt
 
 ### STEP 05 평가용 코드/데이터 파일 다운로드
 - http:// 구글 드라이브 주소 에서 yolov5 알집 파일을 현재 디렉토리에 '현재 폴더로 풀기'로 풀어주세요
+
+- 디렉토리 구성    
+ 현재경로(./)    
+ ㅣ---------test_input    
+ ㅣ---------test_output    
+ ㅣ--------yolov5 폴더 안에 있는 모든 파일    
+                    .    
+                    .    
+                    .    
 
 
 # yolov5 모델을 사용해 학습
