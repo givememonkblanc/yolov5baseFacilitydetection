@@ -86,7 +86,7 @@ $ python test.py --weights runs/exp()/weights/best.pt --data data/test.yaml --im
 - 평가시 inference 과정이 원활하지 않을 경우를 대비한 참여팀의 성능평가에 사용한 테스트 실행
 ```bash
 #평가점수 산출을 위한 코드
-$ python test.py --weights runs/exp()/weights/best.pt --data data/test.yaml --img 604 --batch 8
+$ python test.py --weights runs/exp()/weights/best.pt --data data/test.yaml --img 608 --batch 8
 
 #위 코드를 실행한 결과가 이미 ourtest_summary폴더에 oursummary.txt로 저장되어있음
 ```
