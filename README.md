@@ -1,6 +1,6 @@
 # background
 - 시설물 분류와 이상탐지를 위해 yolov5모델을 사용함.
-- 사용한 데이터는 제공 데이터와 제공 데이터를 flip하여 agumentation한 데이터를 사용해 한 시설물 당 한 클래스에 400장의 이미지를 
+- 사용한 데이터는 제공 데이터와 제공 데이터를 flip하여 agumentation한 데이터를 사용해 한 시설물 당 한 클래스에 400장의 이미지를 사용함.
 
 
 # background requirement 
