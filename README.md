@@ -92,7 +92,7 @@ $ python detect.py --source ./test_input/ --weights runs/exp()/weights/best.pt -
 ```
 ```bash
 #결과값을 test_output에 저장하기 위한 코드
-$ python .py
+$ python txtedit.py
 ```
 ```bash
 #평가점수 산출을 위한 코드
